@@ -2,7 +2,7 @@
 FROM apache/beam_java17_sdk
 
 #PLACEMENT OF THE EXECUTABLE [MICROSERVICE] ON THE IMAGE
-COPY target/eurekaserver-dev-1.jar app.jar
+COPY target/eurekaserver-prod-1.jar app.jar
 
 #EXPOSE PORTS FOR INCOMING TRAFFIC - HOST_PORT:CONTAINER_PORT
 EXPOSE 9071:9071
